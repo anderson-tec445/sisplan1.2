@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livro Caixa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Livro Caixa</h1>
+        <table id="livroCaixa">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                    <th>Entrada</th>
+                    <th>Saída</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="date" /></td>
+                    <td><input type="text" /></td>
+                    <td><input type="number" /></td>
+                    <td><input type="number" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="addRow" class="btn-action">Adicionar Linha</button>
+        <button id="download" class="btn-action">Baixar como XLSX</button>
+        <div id="saldoContainer">
+            <h2>Saldo em Caixa: <span id="saldo">0</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
